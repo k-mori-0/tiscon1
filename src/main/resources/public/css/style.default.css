@@ -525,6 +525,7 @@ h1 {
   top: 0;
   left: 0;
 }
+/**
 #content .product .front {
   z-index: 2;
   -webkit-transform: rotateY(0deg);
@@ -548,6 +549,8 @@ h1 {
   transform: rotateY(180deg);
   z-index: 1;
 }
+**/
+
 #content .product .invisible {
   visibility: hidden;
 }

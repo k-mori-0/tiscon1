@@ -24,7 +24,7 @@ public class IndexController {
             model.addAttribute("movieRank", categoryRepository.findTop10(MOVIE_ID, null));
             model.addAttribute("musicRank", categoryRepository.findTop10(MUSIC_ID, null));
         } catch (Exception e) {
-            throw new SystemException();
+           throw new SystemException();
         }
         return "index";
     }

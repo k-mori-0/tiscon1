@@ -61,6 +61,7 @@ public class CategoryRepositoryImpl implements CategoryRepository {
         // プロキシ設定が必要の場合
         // RestTemplate rest = myRest("proxy.co.jp", 8080);
 
+
         String jsonString = rest.getForObject(SEARCH_URL, String.class, getGenreName(genreId), subgenreId);
         ObjectMapper mapper = new ObjectMapper();
         Map<String, Object> top10Map = (Map<String, Object>) mapper.readValue(jsonString, Map.class).get("feed");
